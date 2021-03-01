@@ -1,0 +1,136 @@
+/*Variaveis de controle de cores*/
+:root{
+    --background: #fafafa;
+    --white: #FFF;
+    --gray: rgb(223, 223, 223);
+    --darkgray: rgb(168, 168, 168);
+    --button: #0095f6;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: sans-serif; font-size: 14px;}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+/*Container esquerdo com as figuras do telemóvel*/
+.mobilephone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.mobilephone img{
+    width: 50rem;;
+}
+/*Container a direita com as informações de usuário*/
+.content-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 24rem;
+
+}
+.sidebox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    padding: 1.6rem 0;
+    margin: 0.5rem 0;
+    border: 1px solid var(--gray);
+    align-items: center;
+}
+
+.sidebox:nth-child(1){
+  min-height: 20rem;
+    
+}
+
+.instagram-logo{
+    width: 15rem;
+    align-self: center;
+    
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1rem;
+    overflow: hidden;
+}
+.profile-photo{
+    height: 6rem;
+}
+/*Botões*/
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    background-color: var(--button);
+    width: 200px;
+    margin-top: 10px;
+    padding: 8px;
+    outline:none;
+    cursor:pointer;
+}
+
+a {
+    color: #0095f6;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.not-account, p{
+    color: var(--darkgray);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.4rem;
+}
+/*Ultimo conteúdo - download das aplicações*/
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    width: 10.5rem;
+    height: 3rem;
+    background-size: cover;
+    
+
+}
+.app-download:nth-child(1){
+    background-image: url(../imgs/apple-store-button.png);
+}
+.app-download:nth-child(2){
+    background-image: url(../imgs/App+store+button.png);
+}
+
